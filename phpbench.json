@@ -1,0 +1,11 @@
+{
+  "bootstrap": "vendor/autoload.php",
+  "path": "benchmarks",
+  "reports": {
+    "time": {
+      "extends": "aggregate",
+      "title": "The Consumation of Time",
+      "cols": [ "subject", "mode","mean", "rstdev","diff" ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "itcraftsmanpl/php-benchmark",
+    "type": "project",
+    "description": "Benchmarks for php internals",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arkadiusz Kondas",
+            "email": "arkadiusz.kondas@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpbench/phpbench": "^0.14.0"
+    }
+}
