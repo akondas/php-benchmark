@@ -1,5 +1,5 @@
 {
-    "name": "itcraftsmanpl/php-benchmark",
+    "name": "akondas/php-benchmark",
     "type": "project",
     "description": "Benchmarks for php internals",
     "license": "MIT",
