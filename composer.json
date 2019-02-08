@@ -11,6 +11,19 @@
     ],
     "require": {},
     "require-dev": {
-        "phpbench/phpbench": "^0.14.0"
+        "phpbench/phpbench": "^0.14.0",
+        "friendsofphp/php-cs-fixer": "^2.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpBenchmark\\": "benchmarks/"
+        }
+    },
+    "scripts": {
+        "fix-cs": "./vendor/bin/php-cs-fixer fix --config=.php_cs",
+        "check-cs": "./vendor/bin/php-cs-fixer fix --config=.php_cs --dry-run",
+        "build": [
+            "@check-cs"
+        ]
     }
 }
