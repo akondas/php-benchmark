@@ -24,6 +24,6 @@ final class SqrtBench
      */
     public function benchExponentiationOperator() : void
     {
-        3.1415 ** (1 / 2);
+        3.1415 ** .5;
     }
 }
