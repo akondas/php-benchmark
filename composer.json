@@ -12,7 +12,8 @@
     "require": {},
     "require-dev": {
         "phpbench/phpbench": "^0.14.0",
-        "friendsofphp/php-cs-fixer": "^2.14"
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "phpunit/phpunit": "^8.1"
     },
     "autoload": {
         "psr-4": {

@@ -6,7 +6,7 @@ You do not believe? check on your own:
 To run:
 ```
 composer install
-vendor/bin/phpbench run bechmarks/__BenchmarkName__ --report=time --retry-threshold=1 
+vendor/bin/phpbench run benchmarks/__BenchmarkName__ --report=time --retry-threshold=1 
 ```
 
 ## Table of Contents
