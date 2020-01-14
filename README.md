@@ -13,6 +13,7 @@ vendor/bin/phpbench run benchmarks/__BenchmarkName__ --report=time --retry-thres
 
  * Array
     * [Check is array empty](#check-is-array-empty)
+    * [json_decode vs unserialize](#json_decode-unserialize)
  * Math
     * [Exponential expression](#exponential-expression)
     * [Square root](#square-root)
@@ -23,7 +24,7 @@ vendor/bin/phpbench run benchmarks/__BenchmarkName__ --report=time --retry-thres
 ## Benchmark results
 
 ### Check is array empty
-  
+
 How to fast check if array is empty. Remember that `empty` can lead to confusion results (automatic cast type).
 
 ```
@@ -40,9 +41,25 @@ vendor/bin/phpbench run benchmarks/Array/EmptyArrayBench.php --report=time --ret
 
 ```
 
+### `json_decode` vs `unserialize`
+
+Faster way to decompress serialized arrays
+
+```
+vendor/bin/phpbench run benchmarks/Array/JsonDecodeBench.php --report=time --retry-threshold=1 
+
+suite: 1343ab2c7ea88c1f4e096d667ee3e7fc90c7fbc5, date: 2020-01-14, stime: 10:03:37
++------------------+---------+---------+--------+-------+
+| subject          | mode    | mean    | rstdev | diff  |
++------------------+---------+---------+--------+-------+
+| benchJsonDecode  | 7.687μs | 7.697μs | 0.42%  | 3.58x |
+| benchUnserialize | 2.155μs | 2.150μs | 0.33%  | 1.00x |
++------------------+---------+---------+--------+-------+
+```
+
 ### Exponential expression
 
-`pow` function vs `**` operator. 	
+`pow` function vs `**` operator.
 
 ```
 vendor/bin/phpbench run benchmarks/Math/PowBench.php  --report=time --retry-threshold=1
