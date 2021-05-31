@@ -14,6 +14,7 @@ vendor/bin/phpbench run benchmarks/__BenchmarkName__ --report=time --retry-thres
  * Array
     * [Check is array empty](#check-is-array-empty)
     * [json_decode vs unserialize](#json_decode-unserialize)
+    * [`isset` vs `in_array`](#isset-vs-in_array)
  * Math
     * [Exponential expression](#exponential-expression)
     * [Square root](#square-root)
@@ -55,6 +56,22 @@ suite: 1343ab2c7ea88c1f4e096d667ee3e7fc90c7fbc5, date: 2020-01-14, stime: 10:03:
 | benchJsonDecode  | 7.687μs | 7.697μs | 0.42%  | 3.58x |
 | benchUnserialize | 2.155μs | 2.150μs | 0.33%  | 1.00x |
 +------------------+---------+---------+--------+-------+
+```
+
+### `isset` vs `in_array`
+
+Find value in array (1000 elements).
+
+```
+vendor/bin/phpbench run benchmarks/Array/IsSetVsInArray.php --report=time --retry-threshold=1
+
++--------------+---------+---------+--------+--------+
+| subject      | mode    | mean    | rstdev | diff   |
++--------------+---------+---------+--------+--------+
+| benchIsSet   | 0.095μs | 0.095μs | 0.45%  | 1.00x  |
+| benchInArray | 3.289μs | 3.294μs | 0.32%  | 34.51x |
++--------------+---------+---------+--------+--------+
+
 ```
 
 ### Exponential expression
