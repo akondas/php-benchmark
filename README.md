@@ -120,3 +120,18 @@ vendor/bin/phpbench run benchmarks/Strict/InArrayBench.php --report=time --retry
 | benchInArrayStrictMixed | 0.078μs | 0.078μs | 0.41%  | 1.48x |
 +-------------------------+---------+---------+--------+-------+
 ```
+
+### `match` vs array map
+
+Test if match is faster than using array key to match value:
+
+```
+vendor/bin/phpbench run benchmarks/Syntax/MatchVsArrayMapBench.php --report=time --retry-threshold=1
+
++---------------+---------+---------+--------+-------+
+| subject       | mode    | mean    | rstdev | diff  |
++---------------+---------+---------+--------+-------+
+| benchMatch    | 0.841μs | 0.838μs | 0.63%  | 1.01x |
+| benchArrayMap | 0.829μs | 0.828μs | 0.35%  | 1.00x |
++---------------+---------+---------+--------+-------+
+```
