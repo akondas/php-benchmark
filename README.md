@@ -18,6 +18,8 @@ vendor/bin/phpbench run benchmarks/__BenchmarkName__ --report=time --retry-thres
  * Math
     * [Exponential expression](#exponential-expression)
     * [Square root](#square-root)
+ * Reflection
+   * [Short class name](#short-class-name)
  * Strict checking
     * [`in_array` strict mode](#in_array-strict-mode)
 
@@ -134,4 +136,20 @@ vendor/bin/phpbench run benchmarks/Syntax/MatchVsArrayMapBench.php --report=time
 | benchMatch    | 0.841μs | 0.838μs | 0.63%  | 1.01x |
 | benchArrayMap | 0.829μs | 0.828μs | 0.35%  | 1.00x |
 +---------------+---------+---------+--------+-------+
+```
+
+### Short class name
+
+Test if reflection short class name is faster than using `get_class` and string manipulation:
+
+```
+vendor/bin/phpbench run benchmarks/Reflection/ShortClassNameBench.php --report=time --retry-threshold=2 
+
++-----------------+---------+---------+--------+
+| subject         | mode    | mean    | rstdev |
++-----------------+---------+---------+--------+
+| benchBasename   | 0.184μs | 0.185μs | ±1.19% |
+| benchReflection | 0.145μs | 0.145μs | ±0.22% |
++-----------------+---------+---------+--------+
+
 ```
