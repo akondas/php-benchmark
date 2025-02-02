@@ -11,6 +11,7 @@ final class PowBench
 {
     /**
      * @Revs(1000000)
+     *
      * @Iterations(5)
      */
     public function benchPowFunction() : void
@@ -20,6 +21,7 @@ final class PowBench
 
     /**
      * @Revs(1000000)
+     *
      * @Iterations(5)
      */
     public function benchExponentiationOperator() : void

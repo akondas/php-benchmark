@@ -11,6 +11,7 @@ final class SqrtBench
 {
     /**
      * @Revs(1000000)
+     *
      * @Iterations(5)
      */
     public function benchSqrtFunction() : void
@@ -20,6 +21,7 @@ final class SqrtBench
 
     /**
      * @Revs(1000000)
+     *
      * @Iterations(5)
      */
     public function benchExponentiationOperator() : void

@@ -34,6 +34,7 @@ final class MatchVsArrayMapBench
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchMatch() : void
@@ -66,6 +67,7 @@ final class MatchVsArrayMapBench
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchArrayMap() : void

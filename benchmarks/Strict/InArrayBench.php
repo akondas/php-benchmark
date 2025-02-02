@@ -11,6 +11,7 @@ final class InArrayBench
 {
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchInArray() : void
@@ -20,6 +21,7 @@ final class InArrayBench
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchInArrayMixed() : void
@@ -29,6 +31,7 @@ final class InArrayBench
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchInArrayStrict() : void
@@ -38,6 +41,7 @@ final class InArrayBench
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchInArrayStrictMixed() : void

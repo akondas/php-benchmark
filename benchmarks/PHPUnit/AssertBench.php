@@ -22,6 +22,7 @@ final class AssertBench extends TestCase
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchAssertThis() : void
@@ -31,6 +32,7 @@ final class AssertBench extends TestCase
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchAssertSelf() : void
@@ -40,6 +42,7 @@ final class AssertBench extends TestCase
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchAssertStatic() : void
@@ -49,6 +52,7 @@ final class AssertBench extends TestCase
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchAssertFunction() : void
@@ -58,6 +62,7 @@ final class AssertBench extends TestCase
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchAssertStaticClass() : void

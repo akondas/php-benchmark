@@ -11,6 +11,7 @@ final class EmptyArrayBench
 {
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchEmpty() : void
@@ -20,6 +21,7 @@ final class EmptyArrayBench
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchCount() : void
@@ -29,6 +31,7 @@ final class EmptyArrayBench
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchCountStrict() : void
@@ -38,6 +41,7 @@ final class EmptyArrayBench
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchComparision() : void

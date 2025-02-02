@@ -10,12 +10,12 @@
         }
     ],
     "require": {
-        "php": ">=7.4"
+        "php": "^8.3"
     },
     "require-dev": {
-        "phpbench/phpbench": "^0.16.0",
-        "friendsofphp/php-cs-fixer": "^2.14",
-        "phpunit/phpunit": "^8.1"
+        "phpbench/phpbench": "^1.4",
+        "friendsofphp/php-cs-fixer": "^v3.68",
+        "phpunit/phpunit": "^11.5"
     },
     "autoload": {
         "psr-4": {
@@ -23,8 +23,8 @@
         }
     },
     "scripts": {
-        "fix-cs": "./vendor/bin/php-cs-fixer fix --config=.php_cs",
-        "check-cs": "./vendor/bin/php-cs-fixer fix --config=.php_cs --dry-run",
+        "fix-cs": "./vendor/bin/php-cs-fixer fix",
+        "check-cs": "./vendor/bin/php-cs-fixer fix --dry-run",
         "build": [
             "@check-cs"
         ]

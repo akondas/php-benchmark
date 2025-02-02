@@ -24,6 +24,7 @@ final class IsSetVsInArray
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchIsSet() : void
@@ -33,6 +34,7 @@ final class IsSetVsInArray
 
     /**
      * @Revs(100000)
+     *
      * @Iterations(5)
      */
     public function benchInArray() : void

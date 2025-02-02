@@ -11,6 +11,7 @@ final class JsonDecodeBench
 {
     /**
      * @Revs(1000)
+     *
      * @Iterations(5)
      */
     public function benchJsonDecode() : void
@@ -20,6 +21,7 @@ final class JsonDecodeBench
 
     /**
      * @Revs(1000)
+     *
      * @Iterations(5)
      */
     public function benchUnserialize(): void
